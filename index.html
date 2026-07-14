@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Css style -->
     <link rel="stylesheet" href="style.css">
+    <!-- Google FOnts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Hacktiviti - Le digital notre metier</title>
 </head>
 
@@ -16,19 +22,25 @@
             <div class="logo">
                 <h1>Hacktiviti</h1>
             </div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
             <ul class="nav-list">
                 <li><a class="nav-item" href="">Accueil</a></li>
                 <li><a class="nav-item" href="">Services</a></li>
                 <li><a class="nav-item" href="">Contact</a></li>
+                <li class="nav-cta-mobile">
+                    <a href="#contact" class="btn btn-nav">Contactez-nous</a>
+                </li>
             </ul>
-            <div class="nav-left">
+            <div class="nav-right">
                 <a href="#contact" class="btn btn-contact">Contact</a>
             </div>
-            <div class="burger">
+            <label for="menu-toggle" class="burger" aria-label="Menu de navigation">
                 <div class="stroke"></div>
                 <div class="stroke"></div>
                 <div class="stroke"></div>
-            </div>
+            </label>
         </nav>
     </header>
     <!-- header -->
@@ -37,16 +49,18 @@
     <main>
 
         <!-- Hero -->
-        <section class="hero">
-            <div class="hero-box">
-                <h1 class="hero-heading">Hacktiviti, le leader du numerique au congo</h1>
-                <p class="hero-sub">
-                    Votre projet , notre priorite.
-                    Nous sommes la pour trnasformer vos idees en projets reel.
-                </p>
-                <div class="hero-link">
-                    <a href="#services" class="btn btn-hero">Services</a>
-                    <a href="#services" class="btn btn-hero">Contact</a>
+        <section class="hero" id="hero">
+            <div class="section-wrapper">
+                <div class="hero-box">
+                    <h1 class="hero-heading">Hacktiviti, le leader du numerique au congo</h1>
+                    <p class="hero-sub">
+                        Votre projet , notre priorite.
+                        Nous sommes la pour trnasformer vos idees en projets reel.
+                    </p>
+                    <div class="hero-link">
+                        <a href="#services" class="btn btn-hero">Services</a>
+                        <a href="#services" class="btn btn-hero">Contact</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -54,155 +68,269 @@
 
         <!-- About -->
         <section class="about">
-            <h2 class="section-title">Qui sommes-nous?</h2>
-            <p class="section-sub">Hacktiviti est l'une des meilleures agencs Web du Congo, ouvert depuis 2024</p>
-
             <div class="section-wrapper">
-                <div class="section-image">
-                    <img src="" alt="Section image" class="section-img">
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusantium quo quod fugit impedit
-                        corporis deleniti exercitationem dolores quisquam ipsam tempora nihil inventore voluptatem, ea
-                        cum tenetur. Esse id nemo ad doloribus, alias molestias incidunt doloremque adipisci repellat,
-                        quaerat animi nihil nisi laborum odio aliquid voluptates numquam ab accusamus et?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusantium quo quod fugit impedit
-                        corporis deleniti exercitationem dolores quisquam ipsam tempora nihil inventore voluptatem, ea
-                        cum tenetur. Esse id nemo ad doloribus, alias molestias incidunt doloremque adipisci repellat,
-                        quaerat animi nihil nisi laborum odio aliquid voluptates numquam ab accusamus et?</p>
+                <div class="section-box">
+                    <h2 class="section-title">Qui sommes-<span class="highlight">nous?</span></h2>
+                    <p class="section-sub">Hacktiviti est l'une des meilleures agence Web du Congo, ouvert depuis 2024
+                    </p>
 
+                    <div class="about-box">
+                        <div class="section-image">
+                            <img src="https://i.pinimg.com/736x/f8/ff/2b/f8ff2b262e4bb46bdfbad821613841cd.jpg"
+                                alt="Hacktiviti team" class="section-img">
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusantium quo quod fugit
+                                impedit
+                                corporis deleniti exercitationem dolores quisquam ipsam tempora nihil inventore
+                                voluptatem,
+                                ea
+                                cum tenetur. Esse id nemo ad doloribus, alias molestias incidunt doloremque adipisci
+                                repellat,
+                                quaerat animi nihil nisi laborum odio aliquid voluptates numquam ab accusamus et?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusantium quo quod fugit
+                                impedit
+                                corporis deleniti exercitationem dolores quisquam ipsam tempora nihil inventore
+                                voluptatem,
+                                ea
+                                cum tenetur. Esse id nemo ad doloribus, alias molestias incidunt doloremque adipisci
+                                repellat,
+                                quaerat animi nihil nisi laborum odio aliquid voluptates numquam ab accusamus et?</p>
+
+                        </div>
+                    </div>
                 </div>
+
+
             </div>
         </section>
         <!-- About -->
 
         <!-- Services -->
-        <section class="services">
-            <h2 class="section-title">Nos services</h2>
-            <p class="section-sub">Decouvrer notre domaine d'expertise</p>
+        <section class="services" id="services">
+            <div class="section-wrapper">
+                <div class="section-box">
+                    <h2 class="section-title">Nos <span class="highlight">services</span></h2>
+                    <p class="section-sub">Decouvrer notre domaine d'expertise</p>
 
-            <!-- Services Grid -->
-            <div class="services-grid">
+                    <!-- Services Grid -->
+                    <div class="services-grid">
 
-                <!-- 1st Single service box -->
-                <div class="service-box">
-                    <div class="img-wraper">
-                        <img src="" alt="Image du service" class="service-img">
-                    </div>
-                    <div class="service-body">
-                        <h3 class="service-name">Landing Page</h3>
-                    </div>
-                    <div class="service-list">
-                        <ul>
-                            <li>Une seule page</li>
-                            <li>1 nom de domaine offert</li>
-                            <li>1 an d'hebergement web</li>
-                            <li>Design Responsive</li>
-                            <li>1 Email professionel</li>
-                        </ul>
+                        <!-- 1st Single service box -->
+                        <div class="service-item">
+                            <div class="img-wraper">
+                                <svg class="service-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <circle cx="12" cy="12" r="6"></circle>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                </svg>
+                            </div>
+                            <div class="service-body">
+                                <h3 class="service-name">Landing Page</h3>
+                            </div>
+                            <div class="service-list">
+                                <ul>
+                                    <li>Une seule page</li>
+                                    <li>1 nom de domaine offert</li>
+                                    <li>1 an d'hebergement web</li>
+                                    <li>Design Responsive</li>
+                                    <li>1 Email professionel</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 2nd Single service box -->
+                        <div class="service-item">
+                            <div class="img-wraper">
+                                <svg class="service-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                            </div>
+                            <div class="service-body">
+                                <h3 class="service-name">Site Vitrine</h3>
+                            </div>
+                            <div class="service-list">
+                                <ul>
+                                    <li>1 a 4 Pages web</li>
+                                    <li>1 nom de domaine offert</li>
+                                    <li>1 an d'hebergement web</li>
+                                    <li>Design Responsive</li>
+                                    <li>3 Emails professionel</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 3rd Single service box -->
+                        <div class="service-item">
+                            <div class="img-wraper">
+                                <svg class="service-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="9" cy="21" r="1"></circle>
+                                    <circle cx="20" cy="21" r="1"></circle>
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                </svg>
+                            </div>
+                            <div class="service-body">
+                                <h3 class="service-name">Site Ecommerce</h3>
+                            </div>
+                            <div class="service-list">
+                                <ul>
+                                    <li>Plusieurs pages</li>
+                                    <li>DNS + hebergement</li>
+                                    <li>Galerie photo</li>
+                                    <li>Design Responsive</li>
+                                    <li>5 Emails professionel</li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
-                <!-- 2nd Single service box -->
-                <div class="service-box">
-                    <div class="img-wraper">
-                        <img src="" alt="Image du service" class="service-img">
-                    </div>
-                    <div class="service-body">
-                        <h3 class="service-name">Site Vitrine</h3>
-                    </div>
-                    <div class="service-list">
-                        <ul>
-                            <li>1 a 4 Pages web</li>
-                            <li>1 nom de domaine offert</li>
-                            <li>1 an d'hebergement web</li>
-                            <li>Design Responsive</li>
-                            <li>3 Emails professionel</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- 3rd Single service box -->
-                <div class="service-box">
-                    <div class="img-wraper">
-                        <img src="" alt="Image du service" class="service-img">
-                    </div>
-                    <div class="service-body">
-                        <h3 class="service-name">Site Ecommerce</h3>
-                    </div>
-                    <div class="service-list">
-                        <ul>
-                            <li>Plusieurs pages</li>
-                            <li>DNS + hebergement</li>
-                            <li>Galerie photo</li>
-                            <li>Design Responsive</li>
-                            <li>5 Emails professionel</li>
-                        </ul>
-                    </div>
-                </div>
-
             </div>
+
         </section>
         <!-- Services -->
 
         <!-- Contact -->
         <section class="contact">
-            <h2 class="section-title">Contact</h2>
-            <p class="section-sub">Discutons de votre futur projet</p>
-            <div class="contact-wrapper">
-                <div class="infos">
-                    <h3>Adresse</h3>
-                    <p>
-                        38 Rue Tarik Bnou Zyad, Apt 2, Marrakech, Maroc
-                    </p>
+            <div class="section-wrapper">
+                <div class="section-box">
+                    <h2 class="section-title">Nous <span class="highlight">Contacter</span></h2>
+                    <p class="section-sub">Discutons de votre futur projet</p>
 
-                    <h3>Téléphone</h3>
-                    <p>
-                        +212 691 625 235
-                    </p>
+                    <div class="contact-wrapper">
+                        <!-- Partie Informations -->
+                        <div class="contact-infos">
 
-                    <h3>Email</h3>
-                    <p>contact@anitaorchideegroupe.fr</p>
+                            <div class="info-block">
+                                <div class="info-title-wrapper">
+                                    <!-- Icône Carte / Localisation -->
+                                    <svg class="info-title-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <h3>Adresse</h3>
+                                </div>
+                                <p>27 Avenue Charles de Gaulles, Pointe-Noire, Congo</p>
+                            </div>
 
-                    <h3>Réseaux Sociaux</h3>
-                    <div class="contact-links">
-                        <a href="https://www.linkedin.com/company/anita-orchidee-groupe/" target="_blank"><img
-                                class="h-16 w-16" src="./img/linkedin.png" /></a>
-                        <a href="https://www.facebook.com/share/14fE7pZdHFF/?mibextid=wwXIfr" target="_blank"><img
-                                class="h-16 w-16" src="./img/facebook.png" /></a>
+                            <div class="info-block">
+                                <div class="info-title-wrapper">
+                                    <!-- Icône Téléphone -->
+                                    <svg class="info-title-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                        </path>
+                                    </svg>
+                                    <h3>Téléphone</h3>
+                                </div>
+                                <p><a href="tel:+242050764271">(+242) 05 076 4271 / 06 986 1803</a></p>
+                            </div>
+
+                            <div class="info-block">
+                                <div class="info-title-wrapper">
+                                    <!-- Icône Enveloppe / Mail -->
+                                    <svg class="info-title-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    <h3>Email</h3>
+                                </div>
+                                <p><a href="mailto:contact@anitaorchideegroupe.fr">contact@hacktiviti.com</a>
+                                </p>
+                            </div>
+
+                            <div class="info-block">
+                                <div class="info-title-wrapper">
+                                    <!-- Icône Partage / Réseaux -->
+                                    <svg class="info-title-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <circle cx="18" cy="5" r="3"></circle>
+                                        <circle cx="6" cy="12" r="3"></circle>
+                                        <circle cx="18" cy="19" r="3"></circle>
+                                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                                    </svg>
+                                    <h3>Réseaux Sociaux</h3>
+                                </div>
+                                <div class="contact-links">
+                                    <!-- SVG LinkedIn Inline -->
+                                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                                        <svg class="social-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path
+                                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                            </path>
+                                            <rect x="2" y="9" width="4" height="12"></rect>
+                                            <circle cx="4" cy="4" r="2"></circle>
+                                        </svg>
+                                    </a>
+
+                                    <!-- SVG Facebook Inline -->
+                                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                                        <svg class="social-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Partie Formulaire -->
+                        <form action="#" method="POST" class="contact-form">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Nom</label>
+                                <input type="text" id="name" name="name" placeholder="Votre nom" required
+                                    class="form-input" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Votre email" required
+                                    class="form-input" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="subject">Sujet</label>
+                                <input type="text" id="subject" name="subject" placeholder="Le sujet de votre message"
+                                    required class="form-input" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="message">Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    placeholder="Comment pouvons-nous vous aider ?" required
+                                    class="form-input"></textarea>
+                            </div>
+
+                            <button type="submit" id="submit-btn" class="form-btn">
+                                Envoyer le message
+                            </button>
+                        </form>
                     </div>
 
-
-                    <!-- <h3 class="text-xl font-semibold">Suivez-nous</h3> -->
                 </div>
-                <form action="post">
-                    <div class="form-group">
-                        <label class="form-label" for="name">Nom</label>
-                        <input type="text" id="name" name="name" placeholder="Votre nom" required class="form-input" />
-                    </div>
 
-                    <div class="form-group">
-                        <label class="form-label" for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Votre email" required
-                            class="w-full px-4 py-2 rounded border border-slate-300 focus:ring focus:ring-amber-400 focus:outline-none" />
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label" for="subject">Sujet</label>
-                        <input type="text" id="subject" name="subject" placeholder="Votre sujet" required
-                            class="form-input" />
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label" for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Votre message" required
-                            class="form-input"></textarea>
-                    </div>
-
-                    <button type="submit" id="submit-btn" class="form-btn">
-                        Envoyer
-                    </button>
-                </form>
             </div>
         </section>
         <!-- Contact -->
