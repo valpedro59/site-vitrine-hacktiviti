@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google FOnts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1><a href="/">Hacktiviti</a></h1>
+            </div>
+
+            <!-- Checkbox invisible pour le contrôle du menu sur Mobile -->
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+            <ul class="nav-list">
+                <li><a class="nav-item" href="index.html">Accueil</a></li>
+                <li><a class="nav-item active" href="/">Services</a></li>
+                <li><a class="nav-item" href="contact.html">Contact</a></li>
+                <!-- CTA visible uniquement sur le menu Mobile déroulant -->
+                <li class="nav-cta-mobile">
+                    <a href="#contact" class="btn btn-nav">Contactez-nous</a>
+                </li>
+            </ul>
+
+            <!-- CTA visible à droite uniquement sur Ordinateur -->
+            <div class="nav-right-desktop">
+                <a href="#contact" class="btn btn-nav">Contactez-nous</a>
+            </div>
+
+            <!-- Bouton Burger lié à l'ID de la Checkbox -->
+            <label for="menu-toggle" class="burger" aria-label="Menu de navigation">
+                <div class="stroke"></div>
+                <div class="stroke"></div>
+                <div class="stroke"></div>
+            </label>
+        </nav>
+    </header>
+
+    <!-- header -->
+
+    <!-- main content -->
+    <main>
+
+        <!-- 2. EN-TÊTE DE LA PAGE SERVICES (Hero secondaire plus court) -->
+        <section class="services-hero">
+            <div class="section-wrapper">
+                <div class="hero-box">
+                    <h1 class="services-title">Nos Solutions <span class="highlight">Numériques</span></h1>
+                    <p class="services-subtitle">Découvrez le détail de nos offres conçues pour propulser votre
+                        entreprise au Congo et à l'international.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SECTION GRILLE DES SERVICES DÉTAILLÉS -->
+        <section class="services-detail-section">
+            <div class="section-wrapper">
+
+                <div class="services-grid">
+                    <!-- Service 1 : Landing Page -->
+                    <div class="service-item">
+                        <div class="img-wrapper">
+                            <svg class="service-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg>
+                        </div>
+                        <div class="service-body">
+                            <h3 class="service-name">Landing Page</h3>
+                            <p class="service-description">Une page d'atterrissage ultra-optimisée pour convertir vos
+                                visiteurs congolais en clients qualifiés.</p>
+                        </div>
+                        <div class="service-list">
+                            <ul>
+                                <li>Une seule page percutante</li>
+                                <li>1 nom de domaine offert</li>
+                                <li>1 an d'hébergement web</li>
+                                <li>Design Responsive</li>
+                                <li>1 Email professionnel</li>
+                            </ul>
+                        </div>
+                        <a href="index.html#contact" class="btn btn-service-action">Choisir cette offre</a>
+                    </div>
+
+                    <!-- Service 2 : Site Vitrine -->
+                    <div class="service-item">
+                        <div class="img-wrapper">
+                            <svg class="service-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
+                        </div>
+                        <div class="service-body">
+                            <h3 class="service-name">Site Vitrine</h3>
+                            <p class="service-description">Présentez votre activité professionnelle, vos valeurs et
+                                services avec une vitrine web haut de gamme.</p>
+                        </div>
+                        <div class="service-list">
+                            <ul>
+                                <li>1 à 4 Pages web personnalisées</li>
+                                <li>1 nom de domaine offert</li>
+                                <li>1 an d'hébergement web</li>
+                                <li>Design Responsive</li>
+                                <li>3 Emails professionnels</li>
+                            </ul>
+                        </div>
+                        <a href="index.html#contact" class="btn btn-service-action">Choisir cette offre</a>
+                    </div>
+
+                    <!-- Service 3 : Site Ecommerce -->
+                    <div class="service-item">
+                        <div class="img-wrapper">
+                            <svg class="service-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                        </div>
+                        <div class="service-body">
+                            <h3 class="service-name">Site Ecommerce</h3>
+                            <p class="service-description">Une boutique en ligne complète pour vendre vos produits au
+                                Congo avec des galeries interactives.</p>
+                        </div>
+                        <div class="service-list">
+                            <ul>
+                                <li>Plusieurs pages & Catalogue</li>
+                                <li>DNS + hébergement inclus</li>
+                                <li>Galerie photo & Panier</li>
+                                <li>Design Responsive</li>
+                                <li>5 Emails professionnels</li>
+                            </ul>
+                        </div>
+                        <a href="index.html#contact" class="btn btn-service-action">Choisir cette offre</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. SECTION DE RÉASSURANCE / APPEL À L'ACTION BAS DE PAGE -->
+        <section class="services-cta">
+            <div class="section-wrapper">
+                <h2>Besoin d'un projet sur <span class="highlight-green">mesure</span> ?</h2>
+                <p>Votre besoin ne rentre pas dans ces cases ? Aucun problème. Notre équipe développe des applications
+                    et des plateformes entièrement personnalisées selon votre cahier des charges.</p>
+                <a href="index.html#contact" class="btn btn-custom-cta">Demander un devis personnalisé</a>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact">
+            <div class="section-wrapper">
+                <div class="section-box">
+                    <h2 class="section-title">Nous <span class="highlight">Contacter</span></h2>
+                    <p class="section-sub">Discutons de votre futur projet</p>
+
+                    <div class="contact-wrapper">
+                        <!-- Partie Informations -->
+                        <div class="contact-infos">
+
+                            <div class="info-block">
+                                <div class="info-title-wrapper">
+                                    <!-- Icône Carte / Localisation -->
+                                    <svg class="info-title-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <h3>Adresse</h3>
+                                </div>
+                                <p>27 Avenue Charles de Gaulles, Pointe-Noire, Congo</p>
+                            </div>
+
+                            <div class="info-block">
+                                <div class="info-title-wrapper">
+                                    <!-- Icône Téléphone -->
+                                    <svg class="info-title-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                        </path>
+                                    </svg>
+                                    <h3>Téléphone</h3>
+                                </div>
+                                <p><a href="tel:+242050764271">(+242) 05 076 4271 / 06 986 1803</a></p>
+                            </div>
+
+                            <div class="info-block">
+                                <div class="info-title-wrapper">
+                                    <!-- Icône Enveloppe / Mail -->
+                                    <svg class="info-title-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    <h3>Email</h3>
+                                </div>
+                                <p><a href="mailto:contact@anitaorchideegroupe.fr">contact@hacktiviti.com</a>
+                                </p>
+                            </div>
+
+                            <div class="info-block">
+                                <div class="info-title-wrapper">
+                                    <!-- Icône Partage / Réseaux -->
+                                    <svg class="info-title-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <circle cx="18" cy="5" r="3"></circle>
+                                        <circle cx="6" cy="12" r="3"></circle>
+                                        <circle cx="18" cy="19" r="3"></circle>
+                                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                                    </svg>
+                                    <h3>Réseaux Sociaux</h3>
+                                </div>
+                                <div class="contact-links">
+                                    <!-- SVG LinkedIn Inline -->
+                                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                                        <svg class="social-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path
+                                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                            </path>
+                                            <rect x="2" y="9" width="4" height="12"></rect>
+                                            <circle cx="4" cy="4" r="2"></circle>
+                                        </svg>
+                                    </a>
+
+                                    <!-- SVG Facebook Inline -->
+                                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                                        <svg class="social-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Partie Formulaire -->
+                        <form action="#" method="POST" class="contact-form">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Nom</label>
+                                <input type="text" id="name" name="name" placeholder="Votre nom" required
+                                    class="form-input" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Votre email" required
+                                    class="form-input" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="subject">Sujet</label>
+                                <input type="text" id="subject" name="subject" placeholder="Le sujet de votre message"
+                                    required class="form-input" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="message">Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    placeholder="Comment pouvons-nous vous aider ?" required
+                                    class="form-input"></textarea>
+                            </div>
+
+                            <button type="submit" id="submit-btn" class="form-btn">
+                                Envoyer le message
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- Contact -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-box">
+                <h3>Hacktiviti</h3>
+            </div>
+            <div class="footer-box">
+                <h3>Infos</h3>
+                <p>Pointe-Noire, Congo</p>
+                <p>contact@hacktiviti.com</p>
+                <p>+242 06 986 1803</p>
+            </div>
+            <div class="footer-box">
+                <h3>Services</h3>
+                <p>Landing Page</p>
+                <p>Site Vitrine</p>
+                <p>Site E-commerce</p>
+            </div>
+            <div class="footer-box">
+                <h3>Politique</h3>
+                <p>Mentions legales</p>
+                <p>Nous rejoindre</p>
+                <p>Devenir partenaire</p>
+            </div>
+        </div>
+        <p class="copyright">&copy;2026 Hacktiviti | By <a class="footer-link"
+                href="https://profile-perso.netlify.app">Val Pedro</a></p>
+    </footer>
+    <!-- Footer -->
+
+</body>
+
+</html>

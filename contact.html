@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Css style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google FOnts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Contact - Le digital notre metier</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1><a href="/">Hacktiviti</a></h1>
+            </div>
+
+            <!-- Checkbox invisible pour le contrôle du menu sur Mobile -->
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+            <ul class="nav-list">
+                <li><a class="nav-item" href="index.html">Accueil</a></li>
+                <li><a class="nav-item" href="services.html">Services</a></li>
+                <li><a class="nav-item active" href="/">Contact</a></li>
+                <!-- CTA visible uniquement sur le menu Mobile déroulant -->
+                <li class="nav-cta-mobile">
+                    <a href="#contact" class="btn btn-nav">Contactez-nous</a>
+                </li>
+            </ul>
+
+            <!-- CTA visible à droite uniquement sur Ordinateur -->
+            <div class="nav-right-desktop">
+                <a href="#contact" class="btn btn-nav">Contactez-nous</a>
+            </div>
+
+            <!-- Bouton Burger lié à l'ID de la Checkbox -->
+            <label for="menu-toggle" class="burger" aria-label="Menu de navigation">
+                <div class="stroke"></div>
+                <div class="stroke"></div>
+                <div class="stroke"></div>
+            </label>
+        </nav>
+    </header>
+
+    <!-- CONTENU PRINCIPAL DE LA PAGE -->
+    <main style="padding-top: 5rem;">
+
+
+        <!-- Contact -->
+        <section class="contact">
+            <div class="section-wrapper">
+                <div class="section-box">
+                    <h2 class="section-title">Nous <span class="highlight">Contacter</span></h2>
+                    <p class="section-sub">Une question, un devis ou un besoin urgent ? Notre équipe au Congo vous
+                        répond sous 24h.</p>
+
+                    <div class="contact-wrapper">
+                        <!-- Partie Informations -->
+                        <div class="contact-infos">
+
+                            <div class="info-block">
+                                <div class="info-title-wrapper">
+                                    <!-- Icône Carte / Localisation -->
+                                    <svg class="info-title-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    <h3>Adresse</h3>
+                                </div>
+                                <p>27 Avenue Charles de Gaulles, Pointe-Noire, Congo</p>
+                            </div>
+
+                            <div class="info-block">
+                                <div class="info-title-wrapper">
+                                    <!-- Icône Téléphone -->
+                                    <svg class="info-title-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                        </path>
+                                    </svg>
+                                    <h3>Téléphone</h3>
+                                </div>
+                                <p><a href="tel:+242050764271">(+242) 05 076 4271 / 06 986 1803</a></p>
+                            </div>
+
+                            <div class="info-block">
+                                <div class="info-title-wrapper">
+                                    <!-- Icône Enveloppe / Mail -->
+                                    <svg class="info-title-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    <h3>Email</h3>
+                                </div>
+                                <p><a href="mailto:contact@anitaorchideegroupe.fr">contact@hacktiviti.com</a>
+                                </p>
+                            </div>
+
+                            <div class="info-block">
+                                <div class="info-title-wrapper">
+                                    <!-- Icône Partage / Réseaux -->
+                                    <svg class="info-title-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <circle cx="18" cy="5" r="3"></circle>
+                                        <circle cx="6" cy="12" r="3"></circle>
+                                        <circle cx="18" cy="19" r="3"></circle>
+                                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                                    </svg>
+                                    <h3>Réseaux Sociaux</h3>
+                                </div>
+                                <div class="contact-links">
+                                    <!-- SVG LinkedIn Inline -->
+                                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                                        <svg class="social-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path
+                                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                            </path>
+                                            <rect x="2" y="9" width="4" height="12"></rect>
+                                            <circle cx="4" cy="4" r="2"></circle>
+                                        </svg>
+                                    </a>
+
+                                    <!-- SVG Facebook Inline -->
+                                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                                        <svg class="social-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Partie Formulaire -->
+                        <form action="#" method="POST" class="contact-form">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Nom</label>
+                                <input type="text" id="name" name="name" placeholder="Votre nom" required
+                                    class="form-input" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Votre email" required
+                                    class="form-input" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="subject">Sujet</label>
+                                <input type="text" id="subject" name="subject" placeholder="Le sujet de votre message"
+                                    required class="form-input" />
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="message">Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    placeholder="Comment pouvons-nous vous aider ?" required
+                                    class="form-input"></textarea>
+                            </div>
+
+                            <button type="submit" id="submit-btn" class="form-btn">
+                                Envoyer le message
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- Contact -->
+
+    </main>
+    <!-- Main Content -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-box">
+                <h3>Hacktiviti</h3>
+            </div>
+            <div class="footer-box">
+                <h3>Infos</h3>
+                <p>Pointe-Noire, Congo</p>
+                <p>contact@hacktiviti.com</p>
+                <p>+242 06 986 1803</p>
+            </div>
+            <div class="footer-box">
+                <h3>Services</h3>
+                <p>Landing Page</p>
+                <p>Site Vitrine</p>
+                <p>Site E-commerce</p>
+            </div>
+            <div class="footer-box">
+                <h3>Politique</h3>
+                <p>Mentions legales</p>
+                <p>Nous rejoindre</p>
+                <p>Devenir partenaire</p>
+            </div>
+        </div>
+        <p class="copyright">&copy;2026 Hacktiviti | By <a class="footer-link"
+                href="https://profile-perso.netlify.app">Val Pedro</a></p>
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>

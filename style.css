@@ -90,7 +90,7 @@ nav {
   max-width: 90vw;
   margin: 0 auto;
 }
-.logo h1 {
+.logo a {
   color: var(--bg-primary);
 }
 .menu-checkbox {
@@ -132,6 +132,18 @@ nav {
 .nav-item:hover {
   color: var(--accent-color);
 }
+/* État normal au survol */
+.nav-item:hover {
+  color: var(--accent-color);
+}
+
+/* La vraie classe pour la page en cours (Ajoutez l'état :active ici si vous voulez la même couleur au clic) */
+.nav-item.active,
+.nav-item:active {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color); /* Optionnel : ajoute un joli trait sous le lien actif */
+}
+
 /*  nav button */
 .btn-nav {
   display: inline-block;
@@ -150,7 +162,7 @@ nav {
   background-color: #0b46c6;
   box-shadow: 0 4px 12px rgba(21, 93, 252, 0.2);
 }
-.nav-right {
+.nav-right-desktop {
   display: none;
 }
 .btn-contact {
@@ -284,15 +296,43 @@ section#hero {
 p.section-sub {
   margin-bottom: 1rem;
 }
-/* Image section */
-.section-img {
-  width: clamp(90vw, 60vw, 600px);
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 1rem;
+
+.about-box {
+  display: flex;
+  flex-direction: column; /* Alignement vertical par défaut sur mobile */
+  gap: 2.5rem; /* Espace entre l'image et le texte */
+  align-items: center;
 }
 
+.section-image {
+  width: 100%;
+  max-width: 500px; /* Évite que l'image ne devienne gigantesque sur tablette */
+}
+/* Image section */
+.section-img {
+  width: 100%;
+  height: 350px; /* Hauteur fixe sur mobile */
+  object-fit: cover; /* Recadre l'image proprement sans la déformer */
+  border-radius: 12px; /* Coins arrondis modernes */
+  box-shadow:
+    0 10px 25px -5px rgba(27, 26, 40, 0.1),
+    0 8px 10px -6px rgba(27, 26, 40, 0.1);
+}
+.about-text {
+  width: 100%;
+}
+
+.about-text p {
+  color: var(--text-black);
+  font-size: 1.05rem;
+  line-height: 1.7; /* Interligne aéré pour un grand confort de lecture */
+  margin-bottom: 1.25rem;
+}
+
+/* Supprime la marge sur le tout dernier paragraphe */
+.about-text p:last-child {
+  margin-bottom: 0;
+}
 /* service grid */
 .services-grid {
   display: grid;
@@ -586,6 +626,128 @@ footer a.footer-link:hover {
   color: var(--bg-primary);
 }
 
+/* services page */
+.services-hero {
+  background-color: var(--text-black); /* Reprend votre fond très sombre */
+  padding: 8rem 0 4rem 0; /* Plus d'espace en haut pour compenser le header fixe */
+  text-align: center;
+}
+.services-title {
+  color: var(--text-primary);
+  font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.services-title .highlight {
+  color: var(--bg-primary); /* "Numériques" s'affiche en Bleu électrique */
+}
+
+.services-subtitle {
+  color: var(
+    --bg-secondary
+  ); /* Violet pastel pour adoucir le texte sur fond sombre */
+  font-size: clamp(1rem, 1.5vw + 0.5rem, 1.25rem);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+*
+  ---
+  EXTENSION
+  DU
+  STYLE
+  DES
+  CARTES
+  DE
+  SERVICES
+  ---
+  */
+  .services-detail-section {
+  padding: 4rem 0;
+  background-color: #ffffff; /* Fond blanc */
+}
+
+/* Ajout d'un paragraphe descriptif sous le titre de la carte */
+.service-description {
+  color: #64748b; /* Gris intermédiaire */
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Ajustement de la liste pour laisser de la place au bouton */
+.service-list {
+  margin-bottom: 2rem;
+}
+/* Bouton d'action à l'intérieur de chaque offre */
+.btn-service-action {
+  display: inline-block;
+  width: 100%; /* Prend toute la largeur de la carte */
+  padding: 0.85rem;
+  background-color: transparent;
+  color: var(--bg-primary);
+  border: 2px solid var(--bg-primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 6px;
+  text-align: center;
+  transition: all 0.2s ease;
+  margin-top: auto; /* Pousse automatiquement le bouton en bas de la carte si les textes varient */
+}
+.service-item:hover .btn-service-action {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* --- SECTION DE CONCLUSION / APPEL À L'ACTION --- */
+.services-cta {
+  background: linear-gradient(rgba(27, 26, 40, 0.95), rgba(27, 26, 40, 0.98));
+  padding: 5rem 0;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.services-cta h2 {
+  font-size: clamp(1.75rem, 3vw + 1rem, 2.5rem);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.services-cta h2 .highlight-green {
+  color: var(--accent-color); /* "Mesure" s'affiche avec votre vert menthe */
+}
+
+.services-cta p {
+  max-width: 600px;
+  margin: 0 auto 2.5rem auto;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+.btn-custom-cta {
+  display: inline-block;
+  background-color: var(
+    --accent-color
+  ); /* Bouton en Vert Menthe pour casser le bleu habituel */
+  color: var(--text-black);
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-custom-cta:hover {
+  background-color: #3ca385; /* Vert légèrement plus soutenu au survol */
+  box-shadow: 0 10px 20px rgba(78, 190, 158, 0.2);
+  transform: translateY(-2px);
+}
+
+/* contact page */
+
 /* /* --- PASSAGE SUR TABLETTE & ORDINATEUR --- */
 @media (min-width: 48rem) {
   /* À partir de ~768px */
@@ -615,8 +777,28 @@ footer a.footer-link:hover {
     display: none;
   }
 
-  .nav-right {
+  .nav-right-desktop {
     display: block;
+  }
+
+  .about-box {
+    flex-direction: row; /* Alignement côte à côte sur grand écran */
+    align-items: center; /* Aligne verticalement l'image et le texte au centre */
+    gap: 4rem; /* Plus d'espace entre les deux colonnes */
+  }
+
+  .section-image {
+    flex: 1; /* Prend 50% de la largeur disponible */
+    max-width: none;
+  }
+
+  .section-img {
+    height: 450px; /* Image plus grande et immersive sur ordinateur */
+  }
+
+  .about-text {
+    flex: 1; /* Prend les autres 50% de la largeur disponible */
+    text-align: left; /* Aligne le texte à gauche pour le confort de lecture desktop */
   }
 
   .services-grid {
@@ -641,5 +823,8 @@ footer a.footer-link:hover {
 
   .form-btn {
     width: auto; /* Reprend sa taille d'origine sur ordinateur */
+  }
+  footer .footer-wrapper {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

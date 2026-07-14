@@ -17,25 +17,31 @@
 
 <body>
     <!-- header -->
-    <header>
-        <nav>
+    <header class="main-header">
+        <nav class="nav-container">
             <div class="logo">
-                <h1>Hacktiviti</h1>
+                <h1><a href="/">Hacktiviti</a></h1>
             </div>
 
+            <!-- Checkbox invisible pour le contrôle du menu sur Mobile -->
             <input type="checkbox" id="menu-toggle" class="menu-checkbox">
 
             <ul class="nav-list">
-                <li><a class="nav-item" href="">Accueil</a></li>
-                <li><a class="nav-item" href="">Services</a></li>
-                <li><a class="nav-item" href="">Contact</a></li>
+                <li><a class="nav-item active" href="/">Accueil</a></li>
+                <li><a class="nav-item" href="services.html">Services</a></li>
+                <li><a class="nav-item" href="#contact">Contact</a></li>
+                <!-- CTA visible uniquement sur le menu Mobile déroulant -->
                 <li class="nav-cta-mobile">
                     <a href="#contact" class="btn btn-nav">Contactez-nous</a>
                 </li>
             </ul>
-            <div class="nav-right">
-                <a href="#contact" class="btn btn-contact">Contact</a>
+
+            <!-- CTA visible à droite uniquement sur Ordinateur -->
+            <div class="nav-right-desktop">
+                <a href="#contact" class="btn btn-nav">Contactez-nous</a>
             </div>
+
+            <!-- Bouton Burger lié à l'ID de la Checkbox -->
             <label for="menu-toggle" class="burger" aria-label="Menu de navigation">
                 <div class="stroke"></div>
                 <div class="stroke"></div>
@@ -43,82 +49,65 @@
             </label>
         </nav>
     </header>
-    <!-- header -->
 
-    <!-- Main Content -->
+    <!-- CONTENU PRINCIPAL DE LA PAGE -->
     <main>
 
-        <!-- Hero -->
+        <!-- 2. SECTION HERO -->
         <section class="hero" id="hero">
             <div class="section-wrapper">
                 <div class="hero-box">
-                    <h1 class="hero-heading">Hacktiviti, le leader du numerique au congo</h1>
+                    <h1 class="hero-heading">Hacktiviti, le leader du numérique au congo</h1>
                     <p class="hero-sub">
-                        Votre projet , notre priorite.
-                        Nous sommes la pour trnasformer vos idees en projets reel.
+                        Votre projet, notre priorité.
+                        Nous sommes là pour transformer vos idées en projets réels.
                     </p>
                     <div class="hero-link">
                         <a href="#services" class="btn btn-hero">Services</a>
-                        <a href="#services" class="btn btn-hero">Contact</a>
+                        <a href="#contact" class="btn btn-hero">Contact</a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Hero -->
 
-        <!-- About -->
+        <!-- 3. SECTION À PROPOS -->
         <section class="about">
             <div class="section-wrapper">
                 <div class="section-box">
                     <h2 class="section-title">Qui sommes-<span class="highlight">nous?</span></h2>
-                    <p class="section-sub">Hacktiviti est l'une des meilleures agence Web du Congo, ouvert depuis 2024
-                    </p>
+                    <p class="section-sub">Hacktiviti est l'une des meilleures agences Web du Congo, ouverte depuis
+                        2024.</p>
 
                     <div class="about-box">
                         <div class="section-image">
-                            <img src="https://i.pinimg.com/736x/f8/ff/2b/f8ff2b262e4bb46bdfbad821613841cd.jpg"
-                                alt="Hacktiviti team" class="section-img">
+                            <img src="./img/bureau.webp" alt="Hacktiviti team" class="section-img">
                         </div>
-                        <div>
+                        <div class="about-text">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusantium quo quod fugit
-                                impedit
-                                corporis deleniti exercitationem dolores quisquam ipsam tempora nihil inventore
-                                voluptatem,
-                                ea
-                                cum tenetur. Esse id nemo ad doloribus, alias molestias incidunt doloremque adipisci
-                                repellat,
-                                quaerat animi nihil nisi laborum odio aliquid voluptates numquam ab accusamus et?</p>
+                                impedit corporis deleniti exercitationem dolores quisquam ipsam tempora nihil inventore
+                                voluptatem, ea cum tenetur. Esse id nemo ad doloribus, alias molestias incidunt
+                                doloremque adipisci repellat, quaerat animi nihil nisi laborum odio aliquid voluptates
+                                numquam ab accusamus et?</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusantium quo quod fugit
-                                impedit
-                                corporis deleniti exercitationem dolores quisquam ipsam tempora nihil inventore
-                                voluptatem,
-                                ea
-                                cum tenetur. Esse id nemo ad doloribus, alias molestias incidunt doloremque adipisci
-                                repellat,
-                                quaerat animi nihil nisi laborum odio aliquid voluptates numquam ab accusamus et?</p>
-
+                                impedit corporis deleniti exercitationem dolores quisquam ipsam tempora nihil inventore
+                                voluptatem, ea cum tenetur.</p>
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </section>
-        <!-- About -->
 
-        <!-- Services -->
+        <!-- 4. SECTION SERVICES (Avec Grille optimisée et SVGs) -->
         <section class="services" id="services">
             <div class="section-wrapper">
                 <div class="section-box">
                     <h2 class="section-title">Nos <span class="highlight">services</span></h2>
-                    <p class="section-sub">Decouvrer notre domaine d'expertise</p>
+                    <p class="section-sub">Découvrez notre domaine d'expertise</p>
 
-                    <!-- Services Grid -->
                     <div class="services-grid">
-
-                        <!-- 1st Single service box -->
+                        <!-- 1er Service : Landing Page -->
                         <div class="service-item">
-                            <div class="img-wraper">
+                            <div class="img-wrapper">
                                 <svg class="service-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round">
@@ -134,16 +123,16 @@
                                 <ul>
                                     <li>Une seule page</li>
                                     <li>1 nom de domaine offert</li>
-                                    <li>1 an d'hebergement web</li>
+                                    <li>1 an d'hébergement web</li>
                                     <li>Design Responsive</li>
-                                    <li>1 Email professionel</li>
+                                    <li>1 Email professionnel</li>
                                 </ul>
                             </div>
                         </div>
 
-                        <!-- 2nd Single service box -->
+                        <!-- 2ème Service : Site Vitrine -->
                         <div class="service-item">
-                            <div class="img-wraper">
+                            <div class="img-wrapper">
                                 <svg class="service-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round">
@@ -157,18 +146,18 @@
                             </div>
                             <div class="service-list">
                                 <ul>
-                                    <li>1 a 4 Pages web</li>
+                                    <li>1 à 4 Pages web</li>
                                     <li>1 nom de domaine offert</li>
-                                    <li>1 an d'hebergement web</li>
+                                    <li>1 an d'hébergement web</li>
                                     <li>Design Responsive</li>
-                                    <li>3 Emails professionel</li>
+                                    <li>3 Emails professionnels</li>
                                 </ul>
                             </div>
                         </div>
 
-                        <!-- 3rd Single service box -->
+                        <!-- 3ème Service : Site Ecommerce -->
                         <div class="service-item">
-                            <div class="img-wraper">
+                            <div class="img-wrapper">
                                 <svg class="service-icon" xmlns="http://w3.org" viewBox="0 0 24 24" fill="none"
                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round">
@@ -183,21 +172,17 @@
                             <div class="service-list">
                                 <ul>
                                     <li>Plusieurs pages</li>
-                                    <li>DNS + hebergement</li>
+                                    <li>DNS + hébergement</li>
                                     <li>Galerie photo</li>
                                     <li>Design Responsive</li>
-                                    <li>5 Emails professionel</li>
+                                    <li>5 Emails professionnels</li>
                                 </ul>
                             </div>
                         </div>
-
-                    </div>
+                    </div> <!-- Fin Grille -->
                 </div>
             </div>
-
         </section>
-        <!-- Services -->
-
         <!-- Contact -->
         <section class="contact">
             <div class="section-wrapper">
