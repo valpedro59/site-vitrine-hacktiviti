@@ -36,9 +36,6 @@ Notre objectif est de concevoir des solutions web modernes, performantes et intu
 
 - HTML5
 - CSS3
-- JavaScript
-- Bootstrap 5
-- Bootstrap Icons
 - Google Fonts
 
 ---
